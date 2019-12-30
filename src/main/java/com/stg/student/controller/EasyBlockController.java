@@ -29,6 +29,8 @@ public class EasyBlockController {
 	@PostMapping(value = "/login")
 	public Employee  checkLoginDetrails(@RequestBody Employee efrom ) { 
 		
+		System.out.println("heraaaaa ram");
+		
 		System.out.println("siva");
 		System.out.println(efrom);
 		Employee e = easyBlockService.checkLoginDetails(efrom);
